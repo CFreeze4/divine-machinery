@@ -1,0 +1,43 @@
+local M = {
+	bg = "#ffffff",
+	fg = "#111111",
+	bg_alt = "#f3f3f3",
+	selection = "#cfd8ff",
+	black = "#1a1a1a",
+	red = "#c40000",
+	green = "#007a1f",
+	yellow = "#8a6100",
+	blue = "#0b2fd6",
+	magenta = "#8a1fa8",
+	cyan = "#006f7a",
+	white = "#4d4d4d",
+	gray = "#6e6e6e",
+	bred = "#e60000",
+	bgreen = "#008f2a",
+	byellow = "#a87800",
+	bblue = "#2a4aff",
+	bmagenta = "#a62fc8",
+	bcyan = "#008a99",
+	bwhite = "#111111",
+}
+
+M.ansi = {
+	M.black,
+	M.red,
+	M.green,
+	M.yellow,
+	M.blue,
+	M.magenta,
+	M.cyan,
+	M.white,
+	M.gray,
+	M.bred,
+	M.bgreen,
+	M.byellow,
+	M.bblue,
+	M.bmagenta,
+	M.bcyan,
+	M.bwhite,
+}
+
+return M

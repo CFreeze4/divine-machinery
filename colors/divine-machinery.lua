@@ -13,7 +13,13 @@ local function hl(group, opts)
 end
 
 -- Editor
-hl("Normal", { fg = p.fg, bg = p.bg })
+local transparent = vim.g.divine_machinery_transparent ~= false
+local bg = transparent and "NONE" or p.bg
+
+hl("Normal", { fg = p.fg, bg = bg })
+hl("NormalNC", { fg = p.fg, bg = bg })
+hl("SignColumn", { bg = "NONE" })
+hl("EndOfBuffer", { fg = p.bg, bg = "NONE" })
 hl("NormalFloat", { fg = p.fg, bg = p.bg_alt })
 hl("CursorLine", { bg = p.bg_alt })
 hl("Visual", { bg = p.selection })

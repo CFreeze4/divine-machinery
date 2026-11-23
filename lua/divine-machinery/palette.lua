@@ -1,24 +1,27 @@
 local M = {
-	bg = "#ffffff",
-	fg = "#111111",
-	bg_alt = "#f3f3f3",
-	selection = "#cfd8ff",
-	black = "#1a1a1a",
-	red = "#c40000",
-	green = "#007a1f",
-	yellow = "#8a6100",
-	blue = "#0b2fd6",
-	magenta = "#8a1fa8",
-	cyan = "#006f7a",
-	white = "#4d4d4d",
-	gray = "#6e6e6e",
-	bred = "#e60000",
-	bgreen = "#008f2a",
-	byellow = "#a87800",
-	bblue = "#2a4aff",
-	bmagenta = "#a62fc8",
-	bcyan = "#008a99",
-	bwhite = "#111111",
+	bg = "#e6e5d2", -- faded paper (from palette cream D7D6B8, lightened)
+	fg = "#1f1b1a", -- near-black, warm
+	bg_alt = "#d7d6b8", -- palette cream: panels, cursorline, floats
+	selection = "#bac2b0", -- palette sage
+
+	black = "#1f1b1a",
+	red = "#92372c", -- palette rust
+	green = "#3f6b5e", -- dim sage-teal
+	yellow = "#6f5a22", -- dusty ochre
+	blue = "#3d4f7a", -- dead-channel CRT blue
+	magenta = "#7a3f62",
+	cyan = "#2f6b73",
+	white = "#6a5a55", -- palette brown, darkened for legibility
+
+	gray = "#827c78", -- palette gray: comments, autosuggest ghost text
+
+	bred = "#b8321f",
+	bgreen = "#2a7055",
+	byellow = "#84651a",
+	bblue = "#3454a8",
+	bmagenta = "#94457a",
+	bcyan = "#26747e",
+	bwhite = "#2b2523",
 }
 
 M.ansi = {

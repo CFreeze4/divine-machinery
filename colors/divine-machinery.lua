@@ -57,6 +57,23 @@ hl("DiffAdd", { bg = "#cfd9bf" })
 hl("DiffDelete", { bg = "#e3c6bb" })
 hl("DiffChange", { bg = "#c9d1cc" })
 
+-- Git
+hl("Added", { fg = p.green })
+hl("Changed", { fg = p.yellow })
+hl("Removed", { fg = p.red })
+
+for name, c in pairs({
+	Add = p.green,
+	Change = p.yellow,
+	Delete = p.red,
+	Topdelete = p.red,
+	Changedelete = p.yellow,
+	Untracked = p.gray,
+}) do
+	hl("GitSigns" .. name, { fg = c })
+	hl("GitSignsStaged" .. name, { fg = c, italic = true })
+end
+
 -- Snacks UI Elements
 for _, g in ipairs({
 	"SnacksPicker",

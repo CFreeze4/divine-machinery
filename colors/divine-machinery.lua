@@ -101,3 +101,14 @@ hl("SnacksWinBar", { fg = p.fg, bg = bg })
 hl("SnacksWinBarNC", { fg = p.gray, bg = bg })
 hl("SnacksPickerListCursorLine", { link = "CursorLine" })
 hl("SnacksPickerPreviewCursorLine", { link = "CursorLine" })
+
+-- Render Markdown
+for i, c in ipairs({ p.red, p.blue, p.green, p.yellow, p.magenta, p.cyan }) do
+	hl("RenderMarkdownH" .. i, { fg = c, bold = true })
+	hl("RenderMarkdownH" .. i .. "Bg", { bg = "NONE" })
+end
+
+hl("RenderMarkdownCode", { bg = p.bg_alt })
+hl("RenderMarkdownCodeInline", { fg = p.fg, bg = p.bg_alt })
+hl("RenderMarkdownBullet", { fg = p.red })
+hl("RenderMarkdownQuote", { fg = p.gray, italic = true })

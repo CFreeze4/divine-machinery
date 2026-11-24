@@ -15,7 +15,7 @@ end
 -- Editor
 local transparent = vim.g.divine_machinery_transparent ~= false
 local bg = transparent and "NONE" or p.bg
-local alt = transparent and "NONE" or p.bg_alt
+local alt = p.bg_alt
 
 hl("Normal", { fg = p.fg, bg = bg })
 hl("NormalNC", { fg = p.fg, bg = bg })

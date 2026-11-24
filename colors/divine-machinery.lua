@@ -57,6 +57,7 @@ hl("DiffAdd", { bg = "#cfd9bf" })
 hl("DiffDelete", { bg = "#e3c6bb" })
 hl("DiffChange", { bg = "#c9d1cc" })
 
+-- Snacks UI Elements
 for _, g in ipairs({
 	"SnacksPicker",
 	"SnacksPickerList",
@@ -76,3 +77,8 @@ for _, g in ipairs({
 }) do
 	hl(g, { fg = p.gray, bg = bg })
 end
+
+hl("SnacksNormal", { fg = p.fg, bg = bg })
+hl("SnacksNormalNC", { fg = p.fg, bg = bg })
+hl("SnacksWinBar", { fg = p.fg, bg = bg })
+hl("SnacksWinBarNC", { fg = p.gray, bg = bg })

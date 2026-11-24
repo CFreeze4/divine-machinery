@@ -15,19 +15,22 @@ end
 -- Editor
 local transparent = vim.g.divine_machinery_transparent ~= false
 local bg = transparent and "NONE" or p.bg
+local alt = transparent and "NONE" or p.bg_alt
 
 hl("Normal", { fg = p.fg, bg = bg })
 hl("NormalNC", { fg = p.fg, bg = bg })
 hl("SignColumn", { bg = "NONE" })
 hl("EndOfBuffer", { fg = p.bg, bg = "NONE" })
-hl("NormalFloat", { fg = p.fg, bg = p.bg_alt })
-hl("CursorLine", { bg = p.bg_alt })
+hl("NormalFloat", { fg = p.fg, bg = alt })
+hl("FloatBorder", { fg = p.gray, bg = alt })
+hl("CursorLine", { bg = alt })
 hl("Visual", { bg = p.selection })
 hl("LineNr", { fg = p.gray })
 hl("CursorLineNr", { fg = p.fg, bold = true })
-hl("Pmenu", { fg = p.fg, bg = p.bg_alt })
+hl("Pmenu", { fg = p.fg, bg = alt })
 hl("PmenuSel", { fg = p.bg, bg = p.blue })
-hl("StatusLine", { fg = p.fg, bg = p.bg_alt })
+hl("StatusLine", { fg = p.fg, bg = alt })
+hl("StatusLineNC", { fg = p.gray, bg = alt })
 hl("Search", { bg = p.selection, bold = true })
 hl("IncSearch", { fg = p.bg, bg = p.red })
 hl("WinSeparator", { fg = p.gray })

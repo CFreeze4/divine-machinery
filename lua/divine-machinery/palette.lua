@@ -1,7 +1,7 @@
 local M = {
 	bg = "#e6e5d2", -- faded paper (from palette cream D7D6B8, lightened)
 	fg = "#1f1b1a", -- near-black, warm
-	--bg_alt = "#d7d6b8", -- palette cream: panels, cursorline, floats
+	bg_alt = "#d7d6b8", -- palette cream: panels, cursorline, floats
 	selection = "#bac2b0", -- palette sage
 
 	black = "#1f1b1a",

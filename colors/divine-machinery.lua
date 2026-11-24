@@ -56,3 +56,23 @@ hl("DiagnosticHint", { fg = p.cyan })
 hl("DiffAdd", { bg = "#cfd9bf" })
 hl("DiffDelete", { bg = "#e3c6bb" })
 hl("DiffChange", { bg = "#c9d1cc" })
+
+for _, g in ipairs({
+	"SnacksPicker",
+	"SnacksPickerList",
+	"SnacksPickerBox",
+	"SnacksPickerInput",
+	"SnacksPickerPreview",
+}) do
+	hl(g, { fg = p.fg, bg = bg })
+end
+
+for _, g in ipairs({
+	"SnacksPickerBorder",
+	"SnacksPickerListBorder",
+	"SnacksPickerBoxBorder",
+	"SnacksPickerInputBorder",
+	"SnacksPickerPreviewBorder",
+}) do
+	hl(g, { fg = p.gray, bg = bg })
+end
